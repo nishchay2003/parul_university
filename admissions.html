@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Parul University</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="Parul University">
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#mission">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Login <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html?type=student">Student Login</a></li>
+                            <li><a href="login.html?type=faculty">Faculty Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Admissions</h1>
+            <p>Start Your Journey with Us</p>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="admission-process">
+        <div class="container">
+            <h2>Admission Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Application</h4>
+                    <p>Fill out the online application form with required details</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Documents</h4>
+                    <p>Submit all required documents and certificates</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Entrance Test</h4>
+                    <p>Appear for entrance examination (if applicable)</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Interview</h4>
+                    <p>Personal interview with admission committee</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h4>Admission</h4>
+                    <p>Receive admission confirmation and join us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="requirements">
+        <div class="container">
+            <div class="requirements-grid">
+                <div class="requirement-section">
+                    <h3>Eligibility Criteria</h3>
+                    <ul>
+                        <li><strong>Undergraduate:</strong> 12th pass with minimum 60% marks</li>
+                        <li><strong>Postgraduate:</strong> Bachelor's degree with minimum 55% marks</li>
+                        <li><strong>Engineering:</strong> JEE Main/GUJCET qualified</li>
+                        <li><strong>Medical:</strong> NEET qualified</li>
+                        <li><strong>Management:</strong> CAT/MAT/CMAT qualified</li>
+                    </ul>
+                </div>
+                <div class="requirement-section">
+                    <h3>Required Documents</h3>
+                    <ul>
+                        <li>10th & 12th Mark Sheets</li>
+                        <li>Transfer Certificate</li>
+                        <li>Character Certificate</li>
+                        <li>Passport Size Photographs</li>
+                        <li>Entrance Exam Scorecard</li>
+                        <li>Caste Certificate (if applicable)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section class="application-form">
+        <div class="container">
+            <h2>Online Application Form</h2>
+            <form id="admissionForm" class="admission-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender *</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address *</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="course">Preferred Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select Course</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="medicine">Medicine</option>
+                            <option value="business">Business</option>
+                            <option value="arts">Arts & Design</option>
+                            <option value="science">Science</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program Level *</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="postgraduate">Postgraduate</option>
+                            <option value="diploma">Diploma</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="previousEducation">Previous Education *</label>
+                        <input type="text" id="previousEducation" name="previousEducation" placeholder="e.g., 12th Science, B.Tech CSE" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="percentage">Percentage/CGPA *</label>
+                        <input type="text" id="percentage" name="percentage" placeholder="e.g., 85% or 8.5 CGPA" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="entranceExam">Entrance Exam Score (if applicable)</label>
+                    <input type="text" id="entranceExam" name="entranceExam" placeholder="e.g., JEE Main: 95 percentile">
+                </div>
+
+                <!-- Document Upload Section -->
+                <div class="document-upload">
+                    <h4>Document Upload</h4>
+                    <div class="upload-grid">
+                        <div class="upload-item">
+                            <label for="photo">Passport Photo *</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" required>
+                            <div class="upload-info">Max size: 2MB, Format: JPG/PNG</div>
+                        </div>
+                        <div class="upload-item">
+                            <label for="marksheet10">10th Marksheet *</label>
+                            <input type="file" id="marksheet10" name="marksheet10" accept=".pdf,.jpg,.png" required>
+                            <div class="upload-info">Max size: 5MB, Format: PDF/JPG/PNG</div>
+                        </div>
+                        <div class="upload-item">
+                            <label for="marksheet12">12th Marksheet *</label>
+                            <input type="file" id="marksheet12" name="marksheet12" accept=".pdf,.jpg,.png" required>
+                            <div class="upload-info">Max size: 5MB, Format: PDF/JPG/PNG</div>
+                        </div>
+                        <div class="upload-item">
+                            <label for="transferCert">Transfer Certificate</label>
+                            <input type="file" id="transferCert" name="transferCert" accept=".pdf,.jpg,.png">
+                            <div class="upload-info">Max size: 5MB, Format: PDF/JPG/PNG</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="additionalInfo">Additional Information</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any additional information you'd like to share..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" target="_blank">Terms and Conditions</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <span class="checkmark"></span>
+                        I would like to receive updates and newsletters from Parul University
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                    <button type="reset" class="btn-secondary">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section class="important-dates">
+        <div class="container">
+            <h2>Important Dates</h2>
+            <div class="dates-grid">
+                <div class="date-item">
+                    <div class="date">15 Mar 2024</div>
+                    <div class="event">Application Opens</div>
+                </div>
+                <div class="date-item">
+                    <div class="date">30 Jun 2024</div>
+                    <div class="event">Application Deadline</div>
+                </div>
+                <div class="date-item">
+                    <div class="date">15 Jul 2024</div>
+                    <div class="event">Entrance Exam</div>
+                </div>
+                <div class="date-item">
+                    <div class="date">30 Jul 2024</div>
+                    <div class="event">Results Declaration</div>
+                </div>
+                <div class="date-item">
+                    <div class="date">15 Aug 2024</div>
+                    <div class="event">Classes Begin</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Parul University</h3>
+                    <p>Excellence in Education</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vadodara, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                    <p><i class="fas fa-envelope"></i> info@paruluniversity.ac.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parul University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

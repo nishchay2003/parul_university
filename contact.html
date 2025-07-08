@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Parul University</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="https://via.placeholder.com/60x60/1e3a8a/ffffff?text=PU" alt="Parul University">
+                    <span>Parul University</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#mission">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Login <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html?type=student">Student Login</a></li>
+                            <li><a href="login.html?type=faculty">Faculty Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in Touch with Parul University</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Visit Us</h4>
+                    <p>Parul University<br>
+                    Post Limda, Waghodia<br>
+                    Vadodara - 391760<br>
+                    Gujarat, India</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Call Us</h4>
+                    <p>Main Office: +91 2668 260277<br>
+                    Admissions: +91 2668 260201<br>
+                    Toll Free: 1800 123 4567<br>
+                    Emergency: +91 9876543210</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email Us</h4>
+                    <p>General: info@paruluniversity.ac.in<br>
+                    Admissions: admissions@paruluniversity.ac.in<br>
+                    Support: support@paruluniversity.ac.in<br>
+                    Careers: careers@paruluniversity.ac.in</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Office Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM<br>
+                    Sunday: Closed<br>
+                    Holidays: As per calendar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select Subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="admissions">Admissions</option>
+                                    <option value="courses">Course Information</option>
+                                    <option value="placement">Placement</option>
+                                    <option value="research">Research</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry in detail..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <button type="reset" class="btn-secondary">
+                                <i class="fas fa-redo"></i> Reset Form
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Map -->
+                <div class="map-container">
+                    <h2>Find Us on Map</h2>
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5089441624!2d73.35!3d22.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE2JzEyLjAiTiA3M8KwMjEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-info">
+                        <p><strong>Getting Here:</strong></p>
+                        <ul>
+                            <li>15 km from Vadodara Railway Station</li>
+                            <li>20 km from Vadodara Airport</li>
+                            <li>Direct bus service available</li>
+                            <li>Ample parking space available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Contacts -->
+    <section class="department-contacts">
+        <div class="container">
+            <h2>Department Contacts</h2>
+            <div class="departments-grid">
+                <div class="department-card">
+                    <h4>Admissions Office</h4>
+                    <p><i class="fas fa-user"></i> Dr. Rajesh Kumar</p>
+                    <p><i class="fas fa-phone"></i> +91 2668 260201</p>
+                    <p><i class="fas fa-envelope"></i> admissions@paruluniversity.ac.in</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>Academic Office</h4>
+                    <p><i class="fas fa-user"></i> Prof. Meera Sharma</p>
+                    <p><i class="fas fa-phone"></i> +91 2668 260202</p>
+                    <p><i class="fas fa-envelope"></i> academic@paruluniversity.ac.in</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>Student Affairs</h4>
+                    <p><i class="fas fa-user"></i> Mr. Amit Patel</p>
+                    <p><i class="fas fa-phone"></i> +91 2668 260203</p>
+                    <p><i class="fas fa-envelope"></i> students@paruluniversity.ac.in</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>Placement Cell</h4>
+                    <p><i class="fas fa-user"></i> Ms. Priya Singh</p>
+                    <p><i class="fas fa-phone"></i> +91 2668 260204</p>
+                    <p><i class="fas fa-envelope"></i> placement@paruluniversity.ac.in</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>International Office</h4>
+                    <p><i class="fas fa-user"></i> Dr. Sarah Johnson</p>
+                    <p><i class="fas fa-phone"></i> +91 2668 260205</p>
+                    <p><i class="fas fa-envelope"></i> international@paruluniversity.ac.in</p>
+                </div>
+                
+                <div class="department-card">
+                    <h4>Research Office</h4>
+                    <p><i class="fas fa-user"></i> Prof. Vikram Desai</p>
+                    <p><i class="fas fa-phone"></i> +91 2668 260206</p>
+                    <p><i class="fas fa-envelope"></i> research@paruluniversity.ac.in</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are the admission requirements?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Admission requirements vary by program. Generally, undergraduate programs require 12th grade completion with minimum 60% marks, while postgraduate programs require a bachelor's degree with 55% marks. Specific entrance exams may be required for certain courses.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I apply for scholarships?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer various merit-based and need-based scholarships. Applications can be submitted online through our student portal. Merit scholarships are awarded based on academic performance, while need-based scholarships require income documentation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What facilities are available on campus?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our campus features modern classrooms, well-equipped laboratories, library, sports complex, hostels, cafeteria, medical center, and recreational facilities. We also provide Wi-Fi connectivity throughout the campus.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How is the placement support?</h4>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have a dedicated placement cell that works closely with industry partners. Our placement rate is over 90% with students placed in top companies. We also provide career counseling, interview preparation, and skill development programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Parul University</h3>
+                    <p>Excellence in Education</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vadodara, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                    <p><i class="fas fa-envelope"></i> info@paruluniversity.ac.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parul University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

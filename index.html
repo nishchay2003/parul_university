@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parul University - Excellence in Education</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="Parul University">
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#mission">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Parul University</h1>
+            <p><center><h3>Shaping Tomorrow's Leaders Through Excellence in Education</h3></center></p>
+            <button class="btn-primary" onclick="scrollToSection('about')">Know More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Parul University</h2>
+                    <p>Parul University is a leading institution committed to providing world-class education and fostering innovation. With state-of-the-art facilities and experienced faculty, we prepare students for global challenges.</p>
+                    <p>Our commitment to excellence has made us one of the most sought-after universities in the region, offering diverse programs across multiple disciplines.</p>
+                    <a href="about.html" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/homepage.jpg" alt="Campus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="images/Engineering.jpg" alt="Engineering">
+                    <h3>Engineering</h3>
+                    <p>Cutting-edge engineering programs</p>
+                </div>
+                <div class="course-card">
+                    <img src="images/Madical.jpg" alt="Medicine">
+                    <h3>Medicine</h3>
+                    <p>Comprehensive medical education</p>
+                </div>
+                <div class="course-card">
+                    <img src="images/Business.jpg" alt="Business">
+                    <h3>Business</h3>
+                    <p>Modern business management</p>
+                </div>
+                <div class="course-card">
+                    <img src="images/art.jpg" alt="Arts">
+                    <h3>Arts & Design</h3>
+                    <p>Creative arts and design programs</p>
+                </div>
+                <div class="course-card">
+                    <img src="images/Aeronautical.jpg" alt="Aeronautical">
+                    <h3>Aeronautical</h3>
+                    <p>Designing and building aircraft and spacecraft</p>
+                </div>
+                 <div class="course-card">
+                    <img src="images/hotel-management.jpg" alt="Hotel Management">
+                    <h3>Hotel Management</h3>
+                    <p>Study of hospitality and hotel operations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission CTA -->
+    <section class="admission-cta">
+        <div class="container">
+            <h2>Ready to Join Us?</h2>
+            <p>Take the first step towards your bright future</p>
+            <a href="admissions.html" class="btn-primary">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial active">
+                    <p>"Parul University provided me with excellent opportunities and world-class education."</p>
+                    <h4>- Rahul Sharma, Engineering Graduate</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"The faculty and facilities here are outstanding. Best decision of my life!"</p>
+                    <h4>- Priya Patel, Medical Student</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Great campus life and amazing learning environment."</p>
+                    <h4>- Amit Kumar, Business Graduate</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Parul University</h3>
+                    <p>Excellence in Education</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vadodara, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                    <p><i class="fas fa-envelope"></i> info@paruluniversity.ac.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parul University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

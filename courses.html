@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Parul University</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="Parul University">
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#mission">Mission & Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Login <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html?type=student">Student Login</a></li>
+                            <li><a href="login.html?type=faculty">Faculty Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Discover Your Path to Success</p>
+        </div>
+    </section>
+
+    <!-- Course Filters -->
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="engineering">Engineering</button>
+                <button class="filter-btn" data-filter="medicine">Medicine</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="arts">Arts & Design</button>
+                <button class="filter-btn" data-filter="science">Science</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-grid">
+                <!-- Engineering Courses -->
+                <div class="course-card" data-category="engineering">
+                    <img src="images/computer.png" alt="Computer Science">
+                    <div class="course-info">
+                        <h3>Computer Science Engineering</h3>
+                        <p>Duration: 4 Years</p>
+                        <p>Learn cutting-edge programming, AI, and software development skills.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹2,50,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="engineering">
+                    <img src="images/mechanical_engineer.png" alt="Mechanical Engineering">
+                    <div class="course-info">
+                        <h3>Mechanical Engineering</h3>
+                        <p>Duration: 4 Years</p>
+                        <p>Master the principles of mechanics, thermodynamics, and design.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹2,00,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="engineering">
+                    <img src="images/civil-engineering.png" alt="Civil Engineering">
+                    <div class="course-info">
+                        <h3>Civil Engineering</h3>
+                        <p>Duration: 4 Years</p>
+                        <p>Build the infrastructure of tomorrow with modern construction techniques.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹1,80,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medicine Courses -->
+                <div class="course-card" data-category="medicine">
+                    <img src="images/mbbs.jpg" alt="MBBS">
+                    <div class="course-info">
+                        <h3>MBBS</h3>
+                        <p>Duration: 5.5 Years</p>
+                        <p>Comprehensive medical education with hands-on clinical experience.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹8,00,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="medicine">
+                    <img src="images/nursing.jpg" alt="Nursing">
+                    <div class="course-info">
+                        <h3>B.Sc Nursing</h3>
+                        <p>Duration: 4 Years</p>
+                        <p>Professional nursing education with clinical training.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹1,50,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="medicine">
+                    <img src="images/bpharm.png" alt="Pharmacy">
+                    <div class="course-info">
+                        <h3>B.Pharm</h3>
+                        <p>Duration: 4 Years</p>
+                        <p>Pharmaceutical sciences and drug development studies.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹1,20,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Courses -->
+                <div class="course-card" data-category="business">
+                    <img src="images/mba.png" alt="MBA">
+                    <div class="course-info">
+                        <h3>MBA</h3>
+                        <p>Duration: 2 Years</p>
+                        <p>Advanced business management and leadership skills.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Postgraduate</span>
+                            <span class="course-fee">₹3,50,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="business">
+                    <img src="images/bba.jpg" alt="BBA">
+                    <div class="course-info">
+                        <h3>BBA</h3>
+                        <p>Duration: 3 Years</p>
+                        <p>Foundation in business administration and management.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹1,00,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arts & Design Courses -->
+                <div class="course-card" data-category="arts">
+                    <img src="images/fineart.jpg" alt="Fine Arts">
+                    <div class="course-info">
+                        <h3>Bachelor of Fine Arts</h3>
+                        <p>Duration: 4 Years</p>
+                        <p>Creative expression through various artistic mediums.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹80,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="arts">
+                    <img src="images/Graphic-Design.png" alt="Graphic Design">
+                    <div class="course-info">
+                        <h3>Graphic Design</h3>
+                        <p>Duration: 3 Years</p>
+                        <p>Digital design and visual communication skills.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Undergraduate</span>
+                            <span class="course-fee">₹90,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Science Courses -->
+                <div class="course-card" data-category="science">
+                    <img src="images/MSc.jpg" alt="Physics">
+                    <div class="course-info">
+                        <h3>M.Sc Physics</h3>
+                        <p>Duration: 2 Years</p>
+                        <p>Advanced study of physical sciences and research methods.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Postgraduate</span>
+                            <span class="course-fee">₹60,000/year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card" data-category="science">
+                    <img src="images/methods-in-psychology.png" alt="Chemistry">
+                    <div class="course-info">
+                        <h3>M.Sc Chemistry</h3>
+                        <p>Duration: 2 Years</p>
+                        <p>In-depth study of chemical processes and laboratory techniques.</p>
+                        <div class="course-meta">
+                            <span class="course-level">Postgraduate</span>
+                            <span class="course-fee">₹65,000/year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Features -->
+    <section class="course-features">
+        <div class="container">
+            <h2>Why Choose Our Courses?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h4>Expert Faculty</h4>
+                    <p>Learn from industry experts and experienced professors</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Modern Curriculum</h4>
+                    <p>Updated syllabus aligned with industry requirements</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h4>Placement Support</h4>
+                    <p>Dedicated placement cell with 90%+ placement record</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-microscope"></i>
+                    <h4>Research Opportunities</h4>
+                    <p>Access to state-of-the-art research facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Parul University</h3>
+                    <p>Excellence in Education</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vadodara, Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91 1234567890</p>
+                    <p><i class="fas fa-envelope"></i> info@paruluniversity.ac.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parul University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
